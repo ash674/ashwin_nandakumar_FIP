@@ -1,0 +1,38 @@
+#burgerCon {
+  display: none;
+}
+
+iframe {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.mainNav button {
+  background: url(../images/burger_menu.png) center no-repeat;
+  border: 0px;
+  width: 40px;
+  height: 20px;
+  transition: all 400ms ease;
+}
+
+.mainNav button.expanded {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+#burgerCon.slideToggle {
+  display: block;
+}
+
+body {
+  font-size: 16px;
+  color: #3B215B;
+  background-color: #FBEAEB;
+}
+
+.hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=master.css.map */
