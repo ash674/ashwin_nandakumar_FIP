@@ -35,4 +35,48 @@ body {
   display: none;
 }
 
+nav {
+  color: #3B215B;
+}
+
+.Logo {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+nav {
+  color: white;
+  background-color: #3B215B;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+}
+
+.headerNav {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: white;
+}
+
+.footerNav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.footerNav .footerContent {
+  display: flex;
+  flex-direction: row;
+}
+.footerNav nav {
+  color: white;
+  background-color: #3B215B;
+}
+.footerNav a {
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=master.css.map */

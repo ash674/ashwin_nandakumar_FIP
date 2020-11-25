@@ -1,26 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/master.css"> <!--for now main.css is linked-->
 </head>
 <body>
+    <section class="Logo">
+        <img src="images/logo.svg" alt="Ak Logo">
+        <img src="images/sign_up.img" alt="Sign up img">
+
+        </section>
+
 <header>
+   <nav>
+       <section class="headerNav"> 
     <h2 class="hidden">Header Navigation</h2>
-        <button id="button"></button>
-        <div id="burgerCon">
+    <button id="button"></button>
+    <div id="burgerCon">
+    <h2 class="hidden">Nav</h2>
+    <a href="#">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="product.html">Products</a>
+    <a href="contact.html">Contact</a>
+    </div>
+</section>
+</nav>
+
+</header>
+<main>
+    <section class="contactPage fadeIn">
+        <h2 class="hidden">Contact Form</h2>
+<section class="contactBox">
+    <h2 class="hidden">Contact Box</h2>
+      <form id="contactForm" action="form.php" method="post">
+            <h2 class="hidden">Contact form</h2>
+                <label for="name">Name: (required)</label><br>
+                <input type="text" required id="name" name="name" size="30" placeholder="name"><br>
+                
+                <label for="email">E-mail: (will not be published)</label><br>
+                <input type="email" required id="email" size="30" placeholder="email"><br>
+                
+                
+                <label for="phone">Phone: (required)</label><br>
+                <input type="tel" required id="phone" size="30" placeholder="phone"><br>
+                
+                <label for="comments">Comments:</label><br>
+                <textarea name="comments" id="comments" required cols="50" rows="8"></textarea><br><br>
+                
+               
+                <input class="submit" type="submit" value="Submit">
+        </form>
+        </section>
+            <section class="mapArea">
+                <h2 class="hidden">Map and Info</h2>
+                <section class="addressAndMap">
+                    <h2 class="hidden">Map info</h2>
+                    <p>	1001 Ontario Boulevard <br>
+                        P.O. Box 7125 <br>
+                        London, Ontario, Canada, N5R 3R6 <br>
+                        Phone: 123-456-7890 <br> 
+                        Fax: 987-065-4321 <br>
+                    </p>
+                    <section class="mapouter">
+                        <h2 class="hidden">Map</h2>
+                        <div class="gmap_canvas">
+                            <iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=1001%20Ontario%20&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                            </iframe>
+                            <a href="https://www.embedgooglemap.net"></a>
+                        </div>
+                        
+                </section>
+                </section>			
+        </section>
+</section>
+</main>
+
+<footer>
+<section class="footerNav">
+    <nav>
+        <h2 class="hidden">Footerr Navigation</h2>
+        <section class="footNav">
         <h2 class="hidden">Nav</h2>
         <a href="#">Home</a>
         <a href="projects.html">Projects</a>
-        <a href="product.html">PRODUCTS</a>
+        <a href="product.html">Products</a>
         <a href="contact.html">Contact</a>
-        </div>
+    </section>
     </nav>
-</header>
-
-
-<footer>
-
+</section>
+    <section class="footerContent">
+        <section class="socialMedia">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </section>
+    <section class="footerLogo">
+        <img src="" alt="">
+    </section>
+</section>
     
 </footer>
     <script type="module" src="js/main.js"></script>
