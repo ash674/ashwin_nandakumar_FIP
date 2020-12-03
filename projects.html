@@ -3,70 +3,67 @@
 <head>
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/main.css"> <!--for now main.css is linked-->
+   <link rel="stylesheet" href="css/master.css"> <!--for now main.css is linked-->
 </head>
 <body>
+    <section class="container">
     <section class="Logo">
         <img src="images/logo.svg" alt="Ak Logo">
-        <img src="images/sign_up.img" alt="Sign up img">
-
-        </section>
+        <h1>Ashwin Nandakumar</h1>
+        <img src="images/sign_up_img.png" alt="Sign up img" class="sign_up">
+   </section>
 
 <header>
    <nav>
     <h2 class="hidden">Header Navigation</h2>
     <section class="headerNav">
     <h2 class="hidden">Nav</h2>
-    <a href="#">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="product.html">Products</a>
+    <a href="index.html">Home</a>
+    <a href="#">Projects</a>
+    <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
 </section>
 </nav>
 
 </header>
-<main>
-   <section class="mainContent">
-       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-   </section>
-   <section class="secondaryContent">
-       <section class="row1">
-           <img src="images/image1.jpg" alt="">
-           <img src="images/image2.jpg" alt="">
-       </section>
-       
-       <section class="row2">
-        <img src="images/image3.jpg" alt="">
-        <img src="images/image4.jpg" alt="">
-    </section>
-   </section>
+<main id="app1">
+    <h1 @click="clickHeader">{{ message }}</h1>
+    <p>{{anotherMessage}}</p>
+<section class="projectSection">
+    <mini-card v-for="mini in miniCars"  @showmydata='showMiniData' :mini="mini" :key="mini.id" class="miniImages"></mini-card>
+      
+</section>
 </main>
 
 <footer>
-<section class="footerNav">
-    <nav>
-        <h2 class="hidden">Footerr Navigation</h2>
-        <section class="footNav">
-        <h2 class="hidden">Nav</h2>
-        <a href="#">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="product.html">Products</a>
-        <a href="contact.html">Contact</a>
+    <section class="footerNav">
+        <nav>
+            <h2 class="hidden">Footerr Navigation</h2>
+            <section class="footNav">
+            <h2 class="hidden">Nav</h2>
+            <a href="#">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+      
+        </nav>
     </section>
-</section>
+
+ 
     <section class="footerContent">
         <section class="socialMedia">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-    </section>
+            <img src="images/reddit.png" alt="reddit" class="reddit">
+            <img src="images/facebook.png" alt="fb" class="fb">
+        </section>
     <section class="footerLogo">
-        <img src="" alt="">
+        <img src="./images/logo.svg" alt="">
     </section>
 </section>
     
 </footer>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
     <script type="module" src="js/main.js"></script>
 </body>
 </html>
