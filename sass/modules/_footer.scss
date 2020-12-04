@@ -1,20 +1,18 @@
+footer {
+    background-color: #3B215B;
+}
+
 .footerNav {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: white;
+
+}
 
 .footerContent {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
-nav {
-    color: white;
-    background-color: #3B215B;
-  
-}
-
-a {
-    text-decoration: none;
-}
-}

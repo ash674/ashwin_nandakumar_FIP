@@ -1,13 +1,36 @@
 body {
 font-size: $main-font-size;
 color: $main-color;
-background-color: $bckgrd-color;
 }
+@font-face {
+    font-family: "Europa";
+    src: url("../fonts/Europa.ttf");
+    }
+    
 
 .hidden {
     display: none;
 }
 
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
 nav {
     color: #3B215B;
+}
+
+.mainContent {
+    display: flex;
+    background-color: #3B215B;
+    margin-top: 25px;
+}
+
+
+.secondaryContent {
+    display: flex;
+flex-direction: column;
+    background-color:$bckgrd-color;
+    justify-content: center;
 }

@@ -1,0 +1,22 @@
+.projectSection {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.column1 {
+    background-color: #333333;
+}
+
+
+.column2 {
+    background-color: $bckgrd-color;
+}
+
+.column1, .column2 {
+    display: flex;
+    flex-direction: column;
+}
