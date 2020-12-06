@@ -1,0 +1,38 @@
+.close-button {
+	position: relative;
+	top: 4px;
+	font-family: 'cormorant', arial, sans-serif;
+    margin-left: 6px;
+    cursor: pointer;
+    
+}
+.bio-data {
+  display: none;
+    position: absolute;
+    color: #3b215b;
+    top: 600px;
+    width: 500px;
+    height: 325px;
+    margin-left: 300px;
+    justify-content: center;
+    border: 2px solid #3b215b;
+     background-color: #fbeaeb;
+     border-radius: 2%;
+     h2 {
+       font-size: 22px;
+     }
+     p{
+       display: flex;
+       text-align: center;
+       width: 90%;
+     }
+  }
+  
+
+.LightBox h2 {
+	margin-left: 100px;
+}
+
+.show-lightbox {
+    display: block !important;
+  }
