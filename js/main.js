@@ -38,7 +38,7 @@ import moreContent from "./modules/moreContent.js";
 
             showMiniData(target) {
                 
-             console.log('clicked to view', target.model);  
+             console.log('clicked to view', target.name);  
                   this.showBioData = this.showBioData ? false : true;
 
                  this.currentMiniData = target;

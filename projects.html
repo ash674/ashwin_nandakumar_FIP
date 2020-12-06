@@ -27,11 +27,22 @@
 
 </header>
 <main id="app1">
+    <section class="projectTitle">
     <h1 @click="clickHeader">{{ message }}</h1>
     <p>{{anotherMessage}}</p>
+</section>
 <section class="projectSection">
-    <mini-card v-for="mini in miniCars"  @showmydata='showMiniData' :mini="mini" :key="mini.id" class="miniImages"></mini-card>
-      
+    <mini-card v-for="mini in miniCars"  data-offset = 0 @showmydata='showMiniData' :mini="mini" :key="mini.id" class="miniImages"></mini-card>
+    <!-- <section class="LightBox bouncingAnimation">
+        <span class="close-button">X</span>
+        <h2 class=""></h2>
+        <p class="Info fadeIn"></p>
+</section> -->
+</section>
+<section class="bio-data" :class="{'show-lightbox' : showMiniData}" class="descrip">
+   <span class="close-button">X</span>
+    <h2>Project: {{ currentMiniData.name }}</h2>
+    <p>Description: {{ currentMiniData.description}}</p>
 </section>
 </main>
 
@@ -54,6 +65,7 @@
         <section class="socialMedia">
             <img src="images/reddit.png" alt="reddit" class="reddit">
             <img src="images/facebook.png" alt="fb" class="fb">
+            <p>Ashwin Nandakumar</p>
         </section>
     <section class="footerLogo">
         <img src="./images/logo.svg" alt="">
@@ -65,5 +77,6 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
     <script type="module" src="js/main.js"></script>
+<script type="module" src="js/lightbox.js"></script> 
 </body>
 </html>

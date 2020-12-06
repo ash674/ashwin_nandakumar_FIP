@@ -16,3 +16,18 @@ footer {
     justify-content: space-between;
 }
 
+.socialMedia {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 100px;
+    img {
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+    p {
+        text-align: center;
+        color: white;
+        margin-left: 220px;
+        font-size: 24px;
+    }
+}

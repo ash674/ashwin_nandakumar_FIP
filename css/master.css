@@ -55,33 +55,12 @@
     opacity: 1;
   }
 }
-#burgerCon {
-  display: none;
+@media screen and (min-width: 500px) {
+  .headerNav {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
-
-iframe {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.mainNav button {
-  background: url(../images/burger_menu.png) center no-repeat;
-  border: 0px;
-  width: 40px;
-  height: 20px;
-  transition: all 400ms ease;
-}
-
-.mainNav button.expanded {
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-
-#burgerCon.slideToggle {
-  display: block;
-}
-
 .mainContent {
   display: flex;
   justify-content: center;
@@ -101,6 +80,20 @@ iframe {
   margin-top: 20px;
 }
 
+.projectHeading {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.projectHeading p {
+  background-color: #fbeaeb;
+  width: 500px;
+  margin-left: 10px;
+  text-align: center;
+  color: #3b215b;
+  font-family: "cormorant", arial, sans-serif;
+}
+
 .Logo h1 {
   margin-top: 60px;
   font-size: 24px;
@@ -109,6 +102,7 @@ iframe {
 }
 
 .row1, .row2 {
+  background-color: #3b215b;
   display: flex;
   justify-content: center;
 }
@@ -142,11 +136,52 @@ iframe {
 .footerLogo {
   width: 100px;
   height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 .fb, .reddit {
   width: 64px;
   height: 64px;
+}
+
+.close-button {
+  position: relative;
+  top: 4px;
+  font-family: "cormorant", arial, sans-serif;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.bio-data {
+  display: none;
+  position: absolute;
+  color: #3b215b;
+  top: 600px;
+  width: 500px;
+  height: 325px;
+  margin-left: 300px;
+  justify-content: center;
+  border: 2px solid #3b215b;
+  background-color: #fbeaeb;
+  border-radius: 2%;
+}
+.bio-data h2 {
+  font-size: 22px;
+}
+.bio-data p {
+  display: flex;
+  text-align: center;
+  width: 90%;
+}
+
+.LightBox h2 {
+  margin-left: 100px;
+}
+
+.show-lightbox {
+  display: block !important;
 }
 
 .projectSection {
@@ -155,6 +190,19 @@ iframe {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.projectTitle {
+  display: flex;
+  flex-direction: column;
+  background-color: #fbeaeb;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.projectTitle p, .projectTitle h1 {
+  padding: 0;
+  margin: 5px;
 }
 
 .column1 {
@@ -205,9 +253,52 @@ nav {
   justify-content: center;
 }
 
-.firstRow, .secondRow, .thirdRow {
+.firstRow, .secondRow {
   display: flex;
   flex-direction: row;
+}
+
+.innerAboutContent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 250px;
+}
+.innerAboutContent h2 {
+  font-family: "europa", arial, sans-serif;
+}
+
+.aboutUs h1 {
+  margin-top: 20px;
+  font-size: 24px;
+  text-align: center;
+  background-color: #fbeaeb;
+  border: 3px solid #3b215b;
+}
+
+.firstRow {
+  background-color: #3b215b;
+  color: white;
+}
+.firstRow p {
+  margin-top: 20px;
+}
+
+.secondRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fbeaeb;
+  color: #3b215b;
+  margin-top: 20px;
+}
+.secondRow h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.secondRow p {
+  text-align: center;
+  width: 90%;
 }
 
 .contactPage {
@@ -268,6 +359,7 @@ nav {
   height: 96px;
   margin-top: 20px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 nav a {
@@ -303,6 +395,22 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.socialMedia {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.socialMedia img {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.socialMedia p {
+  text-align: center;
+  color: white;
+  margin-left: 220px;
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=master.css.map */
